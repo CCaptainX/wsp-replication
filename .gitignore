@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Upstream logs (cloned, not redistributed)
+vendor/
+
+# Model weights
+*.safetensors
+*.gguf
+*.pt
+*.npz
+
+# Secrets
+*.env
+.env*
+macmini_togetherai.txt
+*togetherai*.txt
+
+# Phase 1 MiniMax batch request files (14 MB / 9 MB); rebuild with scripts/batch_scaleup.py build
+experiments/exp1_game_id/batch_scaleup_phase1*_*.jsonl
+macmini_openai.txt
